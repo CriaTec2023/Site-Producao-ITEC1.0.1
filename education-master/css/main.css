@@ -2668,6 +2668,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .search-course-area {
+    padding: 1.6em 0 ;
     background: url(../img/s-bg.jpg) center;
     background-size: cover
 }
