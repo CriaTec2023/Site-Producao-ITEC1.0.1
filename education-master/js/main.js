@@ -417,9 +417,25 @@ $(document).ready(function() {
 
     //------- Mailchimp js --------//  
 
-    $(document).ready(function() {
-        $('#mc_embed_signup').find('form').ajaxChimp();
+
+    var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+          method : "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        // you can put any JS code here
+        alert('Seu email foi enviado com sucesso!')
+        window.location.href = '/education-master/index.html';
+      });
     });
+
+
+
+
 
 
 

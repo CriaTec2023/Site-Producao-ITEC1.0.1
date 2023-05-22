@@ -223,7 +223,8 @@
 										</h4>
 									</a>
 									<p>
-										Aprenda a vender mais no instagram.
+										Descubra o potencial do Instagram para impulsionar suas vendas com nosso curso especializado em estratégias de vendas no Instagram. Aprenda como aproveitar ao máximo essa poderosa plataforma de mídia social para promover seus produtos ou serviços e alcançar um público mais amplo.									
+							
 									</p>
 								</div>
 							</div>
@@ -335,13 +336,17 @@
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 search-course-right section-gap">
-							<form class="form-wrap" action="#">
+							<form class="form-wrap" 
+							id="sheetdb-form"
+							action="https://sheetdb.io/api/v1/s95fshqzlprne"
+							method="POST"
+							nome="LeadSiteItec" >
 								<h4 class="text-white pb-20 text-center mb-30">Busque pelos curso disponiveis</h4>		
-								<input type="text" class="form-control" name="name" placeholder="Seu nome" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu nome'" >
-								<input type="phone" class="form-control" name="phone" placeholder="Seu telefone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu telefone'" >
-								<input type="email" class="form-control" name="email" placeholder="Seu melhor email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu melhor email'" >
+								<input type="text" class="form-control" name="data[nome]" placeholder="Seu nome" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu nome'" >
+								<input type="phone" class="form-control" name="data[telefone]" placeholder="Seu telefone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu telefone'" >
+								<input type="email" class="form-control" name="data[email]" placeholder="Seu melhor email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu melhor email'" >
 								<div class="form-select" id="service-select">
-									<select>
+									<select  name="data[interesse]">
 										<option datd-display="">Esolha seu curso</option>
 											<option value="Tecologia">Tecnologia</option>
 											<option value="Administrativo">Administrativo</option>
@@ -350,7 +355,7 @@
 										
 									</select>
 								</div>									
-								<button class="primary-btn text-uppercase">Enviar</button>
+								<button class="primary-btn text-uppercase" type="submit" id="btn_form">Enviar</button>
 							</form>
 						</div>
 					</div>
@@ -407,5 +412,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<script src="js/owl.carousel.min.js"></script>									
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>	
+			<script src="https://sheetdb.io/handlebars.js"></script>
 	</body>
 </html>
