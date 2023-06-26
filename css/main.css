@@ -2108,9 +2108,9 @@ h6 {
 
 #mobile-nav-toggle {
   position: fixed;
-  right: 15px;
+  right: 20px;
   z-index: 999;
-  top: 62px;
+  top: 4vh;
   border: 0;
   background: none;
   font-size: 24px;
@@ -4372,7 +4372,62 @@ dl.toggle.time-line:before {
   color: #7aa52b;
   margin-right: 30px;
 }
+.shieldsimg img{
+  height: 30vh !important;; 
+  width: auto;
+}
+.shields{
+  height: 80vh; 
+  background-color: #ebeceaa2; 
+  padding-bottom: 10vh;
+  margin-bottom: 10vh;
+}
+.shieldsalign{
+  width:80vw
+  text-align: center;
 
+}
+.shields-padding{
+  margin-top: 15vh;
+
+}
+.transition{
+  height: 20vh;
+  background-image: linear-gradient(to bottom, #ffffff, #f9f9fc, #f1f3fa, #e9eef8, #dfe9f5);
+}
+.space20vh{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-bottom:15vh;
+  background-color: #dfe9f5;
+}
+.nav-link{
+  border:none; 
+  box-shadow: none;
+  margin-top:2vh;
+  width:15vh;
+  height: 15vh;
+  border-style:none;
+  border-color:transparent;
+
+}
+
+.section-padding{
+  margin-left: 18vw;
+}
+.mapsEndPage{
+  margin-top: 2vh;
+  magin-bottom: 2vh; 
+  padding-left: 15vw;
+}
+.mapsEndPage img{
+  height: auto;
+  width: 50vw;
+}
+.margintop{
+  padding-top: 5vh;
+
+}
 /* -----------------INICIO COMENTARIO CSS TESTIMONIALS------------------------  */
 
 ul {
@@ -4772,6 +4827,9 @@ body
 }
 
 @media (max-width: 480px) {
+  .shieldsimg img{
+    height: 20vh !important;
+  }
   .banner-content h1 {
     font-size: 32px;
   }
@@ -4810,6 +4868,10 @@ body
 }
 
 @media (max-width: 767px) {
+
+  .spacetop{
+
+  }
   .no-flex-xs {
     display: block !important;
   }
@@ -4909,16 +4971,25 @@ body
   #nav-menu-container {
     display: none;
   }
+  
 }
 
 
 @media (max-width: 767.98px) {
+  #mobile-nav-toggle {
+    padding-rigth:100vh !important;
+  }
   .generic-banner .height {
     height: 400px;
   }
 }
 
 @media (max-width: 768px) {
+  .shields{
+    height: 100vh; 
+    padding-bottom: 20vh;
+    margin-bottom: 20vh;
+  }
   #header #logo h1 {
     font-size: 28px;
   }
