@@ -1971,9 +1971,6 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-}
-
-#header.header-scrolled {
   transition: all 0.5s;
   background-color: rgba(4, 9, 30, 0.9);
 }
@@ -4383,7 +4380,7 @@ dl.toggle.time-line:before {
   margin-bottom: 10vh;
 }
 .shieldsalign{
-  width:80vw
+  width:80vw;
   text-align: center;
 
 }
@@ -4401,35 +4398,87 @@ dl.toggle.time-line:before {
   margin-bottom:15vh;
   background-color: #dfe9f5;
 }
+.space20vh span{
+  font-weight: bold
+}
+.card {
+  width: 20vw;
+  height:40vh;
+  border-radius: 50%;
+  justify-content: center;
+
+}
+.img-filtered {
+  filter: brightness(0.6);
+}
+.card-title {
+  padding:15vh 0 15vh 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #b3b3b3
+}
+.img-effect {
+  transition: transform 0.3s ease;
+}
+.img-effect:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
 .nav-link{
   border:none; 
   box-shadow: none;
   margin-top:2vh;
   width:15vh;
   height: 15vh;
+
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover{
+  background-color: transparent;
+  transform: scale(1.3);
+}
+.nav-link h6:hover{
+  color: #7aa52b;
+}
+.nav-item .nav-link[aria-selected="true"] {
+  background-color: #b3b3b3;  
   border-style:none;
   border-color:transparent;
+
 }
-.nav-link:hover{
-  background: linear-gradient(to bottom, #007AFF, ##007AFF, ##007AFF, ##007AFF, ##007AFF);;
-  box-shadow: 0 0 5px  #007AFF, 0 0 25px  #007AFF, 0 0 50px  #007AFF, 0 0 200px  #dfe9f5;
+.nav-item .nav-link:not([aria-selected="true"]) {
+  background-color: #ddd;
+  color: #333; 
 }
 .section-padding{
   margin-left: 18vw;
 }
 .mapsEndPage{
-  margin-top: 2vh;
-  magin-bottom: 2vh; 
-  padding-left: 15vw;
+  width: 90vw;
 }
 .mapsEndPage img{
-  height: auto;
-  width: 50vw;
+  height: 40vh;
+  width: 30vw;
+  
 }
 .margintop{
   padding-top: 5vh;
-
 }
+.whatsapp-button {
+  position: fixed;
+  bottom: 3vh;
+  right: 1vw;
+  z-index: 9999;
+}
+
+.whatsapp-icon {
+  width: 70px;
+  height:70px;
+  border-radius: 50%;
+  background-color: green;
+}
+
 /* -----------------INICIO COMENTARIO CSS TESTIMONIALS------------------------  */
 
 ul {
