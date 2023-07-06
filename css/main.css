@@ -36,7 +36,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden!important;
   color: #777;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -741,7 +741,7 @@ th {
 }
 
 .container.fullwidth {
-  width: 100%;
+  width: 99%;
 }
 
 .container.no-padding {
@@ -1322,7 +1322,7 @@ h6 {
 
 .single-input {
   display: block;
-  width: 100%;
+  width: 99%;
   line-height: 40px;
   border: none;
   outline: none;
@@ -2153,7 +2153,7 @@ h6 {
   padding: 10px 22px 10px 15px;
   position: relative;
   text-decoration: none;
-  width: 100%;
+  width: 90%;
   display: block;
   outline: none;
   font-weight: 400;
@@ -2189,7 +2189,7 @@ h6 {
 }
 
 #mobile-body-overly {
-  width: 100%;
+  width: 90%;
   height: 100%;
   z-index: 997;
   top: 0;
@@ -2396,7 +2396,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   bottom: 5px;
   margin-top: 40px;
-  width: 100%;
+  width: 90%;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -2429,7 +2429,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-popular-carusel .thumb img {
-  width: 100%;
+  width: 90%;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2598,7 +2598,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  width: 100%;
+  width: 90%;
 }
 
 .single-carusel .detials h4 {
@@ -2636,7 +2636,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   bottom: 5px;
   margin-top: 20px;
-  width: 100%;
+  width: 90%;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -4917,6 +4917,10 @@ body
     margin-left: 20px;
   }
 }
+@media (max-width: 690px) {
+
+}
+
 
 @media (max-width: 767px) {
 
@@ -5009,19 +5013,10 @@ body
   #header #logo img {
     max-height: 40px;
   }
-  #carousel1 img,
-  #carousel2 img,
-  #carousel3 img {
-    display: none;
-  }
-  #carouselMobile1 img,
-  #carouselMobile2 img,
-  #carouselMobile3 img {
-    display: block;
-  }
   #nav-menu-container {
     display: none;
   }
+
   
 }
 
@@ -5047,19 +5042,31 @@ body
   #header #logo img {
     max-height: 40px;
   }
-  #carousel1 img,
-  #carousel2 img,
-  #carousel3 img {
-    display: none;
-  }
-  #carouselMobile1 img,
-  #carouselMobile2 img,
-  #carouselMobile3 img {
-    display: block;
-  }
   #nav-menu-container {
     display: none;
   }
+  .home-carousel{
+    height: 80vh;
+  }
+  .card-img {
+    width: 30vw;
+    height:50vh;
+    padding: 0 0vw 0 0vw;
+  }
+  .card-title {
+    padding:10vh 0 30vh 0;
+    font-size: 2em;
+  }
+  .whatsapp-button {
+    bottom: 5vh;
+    right: 3vw;
+  }
+  
+  .whatsapp-icon{
+    width: 60px;
+    height:60px;
+  }
+  
 }
 
 
@@ -5070,6 +5077,14 @@ body
 
   #nav-menu-container {
     display: none;
+  }
+  .card {
+    width: 45vw;
+    height:50vh;
+  }
+  .card-title {
+    padding:15vh 0 12vh 0;
+    font-size: 2em;
   }
 }
 
